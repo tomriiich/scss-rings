@@ -1,0 +1,112 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+body .row {
+display: flex;
+align-items: center;
+}
+body .row .orange-ring {
+width: 50px;
+height: 50px;
+background-color: transparent;
+border-width: 10px;
+border-style: solid;
+border-color: orange;
+border-radius: 50%;
+box-shadow: 5px 5px 5px #996300, inset 5px 5px 5px #996300;
+}
+body .row .yellow-ring {
+width: 100px;
+height: 100px;
+background-color: transparent;
+border-width: 20px;
+border-style: solid;
+border-color: yellow;
+border-radius: 50%;
+box-shadow: 10px 10px 10px #999900, inset 10px 10px 10px #999900;
+}
+body .black-rings {
+display: flex;
+align-items: center;
+transform: translateX(70px);
+}
+body .black-rings .black-ring-1 {
+width: 15px;
+height: 15px;
+background-color: transparent;
+border-width: 3px;
+border-style: solid;
+border-color: black;
+border-radius: 50%;
+box-shadow: 1.5px 1.5px 1.5px black, inset 1.5px 1.5px 1.5px black;
+transform: translateX(0px);
+margin: 0;
+}
+body .black-rings .black-ring-2 {
+width: 30px;
+height: 30px;
+background-color: transparent;
+border-width: 6px;
+border-style: solid;
+border-color: black;
+border-radius: 50%;
+box-shadow: 3px 3px 3px black, inset 3px 3px 3px black;
+transform: translateX(-10px);
+margin: 0;
+}
+body .black-rings .black-ring-3 {
+width: 45px;
+height: 45px;
+background-color: transparent;
+border-width: 9px;
+border-style: solid;
+border-color: black;
+border-radius: 50%;
+box-shadow: 4.5px 4.5px 4.5px black, inset 4.5px 4.5px 4.5px black;
+transform: translateX(-30px);
+margin: 0;
+}
+body .black-rings .black-ring-4 {
+width: 60px;
+height: 60px;
+background-color: transparent;
+border-width: 12px;
+border-style: solid;
+border-color: black;
+border-radius: 50%;
+box-shadow: 6px 6px 6px black, inset 6px 6px 6px black;
+transform: translateX(-60px);
+margin: 0;
+}
+body .black-rings .black-ring-5 {
+width: 75px;
+height: 75px;
+background-color: transparent;
+border-width: 15px;
+border-style: solid;
+border-color: black;
+border-radius: 50%;
+box-shadow: 7.5px 7.5px 7.5px black, inset 7.5px 7.5px 7.5px black;
+transform: translateX(-100px);
+margin: 0;
+}
+body .black-rings .black-ring-6 {
+width: 90px;
+height: 90px;
+background-color: transparent;
+border-width: 18px;
+border-style: solid;
+border-color: black;
+border-radius: 50%;
+box-shadow: 9px 9px 9px black, inset 9px 9px 9px black;
+transform: translateX(-150px);
+margin: 0;
+}

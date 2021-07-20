@@ -1,0 +1,46 @@
+* {
+    margin: 10px;
+    padding: 0; 
+}
+
+@mixin ring ($width, $height, $border-color) {
+    width: $width;
+    height: $height;
+    background-color: transparent;
+    border-width: $width/5;
+    border-style: solid;
+    border-color: $border-color;
+    border-radius: 50%;
+    box-shadow: $width/10 $width/10 $width/10 darken($border-color, 20%), inset $width/10 $width/10 $width/10 darken($border-color, 20%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    .row {
+        display: flex;
+        align-items: center;
+        .orange-ring {
+            @include ring(50px, 50px, orange);
+        }
+        .yellow-ring {
+            @include ring(100px, 100px, yellow);
+        }
+    }
+    .black-rings {
+        display: flex;
+        align-items: center;
+        transform: translateX(70px);
+        $distance: 0px;
+        @for $i from 1 through 6 {
+            $distance: $distance - ($i - 1)*10px;
+            .black-ring-#{$i} {
+                @include ring(15px*$i, 15px*$i, black);
+                transform: translateX($distance);
+                margin: 0;
+            }
+        }
+    }
+}
